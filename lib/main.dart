@@ -11,10 +11,13 @@ class MyApp extends StatelessWidget {
       title: 'Simplifica AED ',
       theme: ThemeData(
         primarySwatch: Colors.lightBlue, 
-         primaryTextTheme: TextTheme(
+        scaffoldBackgroundColor: Color(0XFFE6E6FA),
+        primaryTextTheme: TextTheme(
             title: TextStyle(
-               color: Colors.white
-            )
+               //color: Colors.white,
+               
+            ),
+            
           )
       ),
       home: Login(),

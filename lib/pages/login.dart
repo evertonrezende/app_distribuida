@@ -7,8 +7,10 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
         body: Container(
-          color: Colors.white,
+          //color: Colors.white,
+          color:Color(0XFFE6E6FA),
           padding: EdgeInsets.only(
               top:60, left:40, right:40, bottom:20
           ),
@@ -57,13 +59,14 @@ class Login extends StatelessWidget {
                   style:TextStyle(fontSize:20) //propriedades do texto interno
                 ),
                  SizedBox(  //espaço um pouco mais depois do campo da senha para o botão
-                  height: 70,
+                  height: 10,
                 ),
                 
+                         
                 //container do botão 
                 Container(
                   height: 60,
-                  alignment: Alignment.centerLeft,
+                  alignment: Alignment.center,
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       begin:Alignment.topLeft,
@@ -93,7 +96,7 @@ class Login extends StatelessWidget {
                               fontSize:20,
 
                             ),
-                            textAlign: TextAlign.left,
+                            textAlign: TextAlign.center,
 
                           ),
                           Container(
@@ -120,7 +123,7 @@ class Login extends StatelessWidget {
                   height: 10,
                 ),
 
-                //botao google
+               
                 Container(
                   height: 40,
                   child: FlatButton(

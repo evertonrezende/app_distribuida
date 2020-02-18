@@ -6,62 +6,28 @@ class Cadastrar extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Cadastro de Alunos'),
-        
+        centerTitle: true,
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.refresh),
+            
+            onPressed: () {},)
+        ]
       ),
+       
         body:Container(
+          //backgroundColor: Color(0xff84FFFF),
           padding:EdgeInsets.only(top:10, left:40, right:40),
-          color:Colors.white,
+          color:Color(0XFFE6E6FA),
+          
           child:ListView(
             children: <Widget> [
-              Container(
-                width:180,
-                height:180,
-                alignment: Alignment(0.0, 1.15),
-                decoration: new BoxDecoration(
-                  image: new DecorationImage(
-                    image: AssetImage("assets/profile.png"),
-                    fit:BoxFit.fitHeight,
-
-                  ),
-                ),
-                child:Container(
-                      height:55,
-                      width: 55,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          gradient:LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              stops:[0.3, 1.0],
-                              colors:[
-                                 Color(0xFF42A5F5),
-                                 Color(0xFF1565C0),
-                              ]
-                          ),
-                          border:Border.all(
-                            width: 1.0,
-                            color:const Color(0xFFFFFFFF),
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(55),
-                          )
-                      ),
-                     child:SizedBox.expand(
-                        child:FlatButton(
-                          child:Icon(
-                            Icons.add,
-                            color: Colors.white,
-                          ),
-                        onPressed: (){},
-                        ),
-                      ),
-                ),
-              ),
+              Icon(Icons.person_add, size: 120.0, color: Colors.lightBlue),
+            
               SizedBox(
                 height: 20,
               ),
               TextFormField(
-                  //autofocus: true,
+                  autofocus: true,
                   keyboardType: TextInputType.text,
                   decoration:InputDecoration(  //contera as propriedades da label
                     labelText: "Nome",
@@ -136,7 +102,7 @@ class Cadastrar extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               color:Colors.white,
                               fontSize:20,
-
+                            
                             ),
                             textAlign: TextAlign.center,
                           ),
